@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    font-family: 'Mulish', sans-serif;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    border-radius: 10px;
+    overflow: hidden;
+    width: calc(100vw - 65vw);
+    max-width: 100%;
+}
+
+.header {
+    padding: 30px 0;
+}
+
+.header h2 {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.form-control {
+    margin-bottom: 22px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    width: 100%;
+    border: 2px solid #f0f0f0;
+    border-radius: 5px;
+    display: block;
+    font-size: 14px;
+    padding: 12px;
+    outline: 0;
+}
+
+.form-control input:focus {
+    border-color: #777;
+}
+
+.form-control.success input {
+    border-color: #2ecc71;
+}
+
+.form-control.error input {
+    border-color: #e74c3c;
+}
+
+.form-control i {
+    position: absolute;
+    right: 12px;
+    top: 38px;
+    visibility: hidden;
+}
+
+.form-control.success i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.form-control.error i.fa-check-exclamation-circle {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-control small {
+    color: #e74c3c;
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+.form .btn {
+    padding: 15px 0;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    display: block;
+    font-size: 16px;
+    width: 100%;
+    font-weight: bold;
+    background-color: #f5eded;
+    /* transition: background-color 0.3s ease; */
+    text-transform: uppercase;
+    cursor: pointer; 
+}
+
+.form .btn:hover {
+    background-color: rgb(55, 210, 55);
+}
+
+
+@media (max-width: 998px) {
+    .container {
+        width: calc(100vw - 35vw);
+        max-width: 100%;
+    }
+}
